@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jass Rai">
+    <meta name="description" content="Portfolio of Jass Nails Art showcasing unique and beautiful nail designs.">
+    <title>Jass Nails Art - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jass Nails Art - Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#three-column">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="rai.jpg" class="card-img-top hero-image" alt="Jass Nails Art"> 
+            <p>As a nail art technician, I specialize in creating unique and beautiful nail designs that enhance the appearance of my clients' hands and nails. I work with a variety of materials and techniques, including gel, acrylic, and natural polish, to create intricate patterns, colorful designs, and creative embellishments like rhinestones, glitter, and nail art stickers. I stay up to date with the latest trends in nail art and ensure that each design matches my clients' individual styles and preferences. My goal is to provide a relaxing and enjoyable experience while making sure my clients leave with nails that are as stunning as they are.</p>
+        </div>
+    </section>
+    
+
+    <section id="three-column" class="container">
+        <h2>My Work</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="1.jpeg" class="card-img-top" alt="Project 1"> 
+                    <div class="card-body">
+                        <h5 class="card-title">ARTISTIC WORK</h5>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="2.jpeg" class="card-img-top" alt="Project 2"> 
+                    <div class="card-body">
+                        <h5 class="card-title">ACRYLIC WORK</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="5.jpeg" class="card-img-top" alt="Project 3"> 
+                    <div class="card-body">
+                        <h5 class="card-title">GEL WORK</h5>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <p>I’m Jass Rai, a passionate nail art technician. I have spent years honing my skills in nail design and have become well-versed in various techniques like gel nails, acrylic nails, and intricate hand-painted art. Each design is carefully created to reflect the personal style of my clients while ensuring their nails are strong and healthy. My goal is to make each appointment a delightful experience and to provide stunning nail art that brings a touch of elegance to every hand.</p>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-light text-center">
+        <p>&copy; 2025 JASS RAI.</p>
+        <p>&copy; Instagram: <a href="https://www.instagram.com/rai_jass_nailsart08" target="_blank">rai_jass_nailsart08</a></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/rai_jass_nailsart08" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/rai_jass_nailsart" target="_blank">Facebook</a>
+        </div>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#copyrightModal">
+            Copyright Info
+        </button>
+    </footer>
+
+    <!-- Copyright Modal -->
+    <div class="modal fade" id="copyrightModal" tabindex="-1" aria-labelledby="copyrightModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="copyrightModalLabel">Copyright Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    &copy; 2025 Jass Rai. All Rights Reserved.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-image {
+    max-width: 200px; /* Set max width of image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5%; /* Optional: makes the image circular */
+    margin-top: 20px; /* Space above the image */
+}
+
+/* Social Media Links */
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0d6efd;
+}
+
+/* Footer Styling */
+footer {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Card Images */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 50px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Contact Form Styling */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+}
+
+#contact .btn-primary {
+    width: 100%;
+}
